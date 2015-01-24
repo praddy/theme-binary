@@ -27,6 +27,8 @@
     })();
     </script>
     {% endif %}
+    <link rel="stylesheet" title="Tomorrow Night" href="http://highlightjs.org/static/styles/monokai.css">
+    <script src="http://highlightjs.org/static/highlight.pack.js"></script>
   </head>
   <body>
 
@@ -275,5 +277,10 @@
 
     {{ footer_meta }}
 
+    <script>
+    //Syntax Highlighter
+    hljs.configure({tabReplace: '  '});
+    hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>
